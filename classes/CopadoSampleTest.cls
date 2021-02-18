@@ -5,5 +5,6 @@ public class CopadoSampleTest {
         acc.Name = 'test';
         insert acc;
         CopadoSample.samplemethod();
+        /////////
     }
 }
