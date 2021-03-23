@@ -17,6 +17,10 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
+                <field>ProductItemId</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
                 <field>AssetId</field>
             </layoutItems>
             <layoutItems>
@@ -32,6 +36,10 @@
             <layoutItems>
                 <behavior>Required</behavior>
                 <field>ReturnOrderId</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>ProductRequestLineItemId</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -135,18 +143,29 @@
     </relatedLists>
     <relatedLists>
         <fields>Name</fields>
-        <fields>Type</fields>
-        <fields>Amount</fields>
-        <fields>Rate</fields>
-        <fields>TaxEffectiveDate</fields>
-        <fields>Description</fields>
-        <relatedList>ReturnOrderItemTaxes</relatedList>
+        <fields>Product2</fields>
+        <fields>SourceProductItem</fields>
+        <fields>QuantityReceived</fields>
+        <fields>DestinationLocation</fields>
+        <fields>IsReceived</fields>
+        <fields>ReceivedBy</fields>
+        <relatedList>ProductTransfers</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>Name</fields>
-        <fields>Amount</fields>
-        <fields>Description</fields>
-        <relatedList>ReturnOrderItemAdjustments</relatedList>
+        <fields>Subject</fields>
+        <fields>Account</fields>
+        <fields>Priority</fields>
+        <fields>Status</fields>
+        <relatedList>WorkOrders</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>Name</fields>
+        <fields>WorkOrder</fields>
+        <fields>Subject</fields>
+        <fields>Priority</fields>
+        <fields>Status</fields>
+        <relatedList>WorkOrderLineItems</relatedList>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
