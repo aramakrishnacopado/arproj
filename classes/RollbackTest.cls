@@ -5,7 +5,7 @@ public class RollbackTest{
         System.debug('Method called');//updatedyu
         
         Account sd = new Account();
-        sd.wer__c = 'ddd';
+        //sd.wer__c = 'ddd';
     }
 
 
